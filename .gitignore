@@ -82,3 +82,4 @@ fabric.properties
 /.idea/ViseVersa3.iml
 /.idea/ViseVersa4.iml
 /.idea/.name
+/viversa-project/db.sqlite3
