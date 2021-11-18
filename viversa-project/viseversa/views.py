@@ -7,4 +7,4 @@ def about(request):
 
 
 def home(request):
-    return render(request, 'home.html', context={'greeting': 'Hello!'})
+    return render(request, 'home.html')
