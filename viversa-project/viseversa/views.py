@@ -11,4 +11,21 @@ def home(request):
 
 
 def reverse(request):
-    return render(request, 'reverse.html')
+    s = ''
+    # "".join(s.split())
+    user_text = request.GET['usertext']
+    # можно также использовать принт для вывода результатов в терминал
+    # print(user_text)
+    # будем запрашивать эту информацию из страницы реверс.хтмл {{ usertext }}
+    reversed_text = ''
+    reversed_text = user_text[::-1]
+    words_count = len(user_text.split())
+    # print(words_count)
+    return render(request,
+                  'reverse.html', {
+                      'usertext': user_text,
+                      'reversed_text': reversed_text,
+                      'words_count': words_count,
+
+                  }
+                  )
