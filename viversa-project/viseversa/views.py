@@ -19,10 +19,10 @@ def reverse(request):
     words_count = len(user_text.split())
     # print(words_count)
     return render(request,
-                  'reverse.html', {
-                      'usertext': user_text,
-                      'reversed_text': reversed_text,
-                      'words_count': words_count,
-
-                  }
+                  'reverse.html',
+                      {
+                          'usertext': user_text,
+                          'reversed_text': reversed_text,
+                          'words_count': words_count,
+                      }
                   )
